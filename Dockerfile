@@ -13,7 +13,6 @@ RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selectio
         python \
         python-apt \
         sudo \
-        bash \
         cron \
         rsync && \
     apt-get clean && \
