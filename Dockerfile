@@ -19,3 +19,4 @@ RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selectio
     rm -rf /var/lib/apt/lists/* && \
     a2enmod ssl rewrite proxy proxy_http headers
 
+CMD ["/lib/systemd/systemd"]
